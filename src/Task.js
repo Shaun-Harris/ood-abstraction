@@ -1,10 +1,16 @@
 class Task {
   constructor(dateDue, description) {
-    //Task due date - not all tasks have a due date. If a task has no
-    //due date, dueDate will be null
     this.dateDue = dateDue
     this.description = description
     this.status = "incomplete"
+  }
+
+  isOverdue() {
+    if(this.status === 'incomplete' && this.dateDue !== null) {
+      const today = new Date()
+      return today > this.dateDue
+    }
+    return false
   }
 }
 

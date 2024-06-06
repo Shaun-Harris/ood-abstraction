@@ -1,9 +1,14 @@
 {
-  "name": "boolean",
+  "name": "ood-abstraction",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "license": "ISC",
+  "title": "module.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "dependencies": {
+  },
   "devDependencies": {
     "jasmine": "^3.10.0"
   }
